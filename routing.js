@@ -41,13 +41,14 @@ if (url === '/' ){
      });
    
  }
+
  res.setHeader("content-type","text/html");
  res.write('<html>');
  res.write('<header><title>MY first page</title></header>');
  res.write('<body><h1>hello hh from my khan </h1></body>');
  res.write('</html>');
  res.end();
-
+ 
 };
 
 module.exports = requestHandler;
