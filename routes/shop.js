@@ -1,11 +1,16 @@
+const path = require('path');
+
 const express = require('express');
+
+const rootDir = require("../util/path")
+
+const { send } = require('express/lib/response');
 
 const router = express.Router();
 
 router.get('/',(req,res,next) =>{
 
-    console.log("in the  another middleware");
-   res.send('<h1>hello espress khan<h1>');
+   res.sendFile(path.join(rootDir,'views','shop.html'));
 
 })
 
