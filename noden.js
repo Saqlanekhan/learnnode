@@ -17,11 +17,7 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use('/admin',adminRouter);
 app.use(shopRouter);
 app.use(contactRouter)
-// app.get('/contactus',(req,res,next) =>{
-//        console.log('contact')
-//            res.sendFile(path.join(rootDir,'views','contact.html'));
-        
-//         })
+
 
 
 app.use((req,res,next) =>{
